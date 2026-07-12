@@ -1,0 +1,1692 @@
+/* =====================================================
+   GOOGLE FONT
+===================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* =====================================================
+   RESET
+===================================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#efefef;
+    color:#111;
+    overflow-x:hidden;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+img{
+    width:100%;
+    display:block;
+    user-select:none;
+    -webkit-user-drag:none;
+}
+
+/* =====================================================
+   MOBILE CONTAINER
+===================================================== */
+
+.mobile-container{
+
+    width:100%;
+    max-width:390px;
+
+    margin:0 auto;
+
+    min-height:100vh;
+
+    background:#fff;
+
+    position:relative;
+
+    overflow-x:hidden;
+
+    padding-bottom:85px;
+
+    box-shadow:0 5px 25px rgba(0,0,0,.08);
+
+}
+
+/* =====================================================
+   TOP NAVBAR
+===================================================== */
+
+.top-navbar{
+
+    position:sticky;
+
+    top:0;
+
+    width:100%;
+
+    height:60px;
+
+    background:#fff;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:0 15px;
+
+    border-bottom:1px solid #ececec;
+
+    z-index:999;
+
+}
+
+.nav-logo h3{
+
+    margin:0;
+
+    font-size:28px;
+
+    font-family:cursive;
+
+    font-weight:700;
+
+}
+
+.nav-icons{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+
+}
+
+.nav-icons a{
+
+    font-size:25px;
+
+    color:#111;
+
+    transition:.3s;
+
+}
+
+.nav-icons a:hover{
+
+    color:#ff006e;
+
+}
+
+/* =====================================================
+   STORIES
+===================================================== */
+
+.stories{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    overflow-x:auto;
+
+    padding:14px 12px;
+
+    background:#fff;
+
+    border-bottom:1px solid #ececec;
+
+    scrollbar-width:none;
+
+    -ms-overflow-style:none;
+
+}
+
+.stories::-webkit-scrollbar{
+
+    display:none;
+
+}
+
+.story{
+
+    flex:0 0 auto;
+
+    text-align:center;
+
+}
+
+.story-ring{
+
+    width:72px;
+
+    height:72px;
+
+    border-radius:50%;
+
+    padding:3px;
+
+    background:linear-gradient(45deg,#feda75,#fa7e1e,#d62976,#962fbf,#4f5bd5);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    transition:.3s;
+
+}
+
+.story-ring img{
+
+    width:64px;
+
+    height:64px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+    border:3px solid #fff;
+
+}
+
+.story span{
+
+    display:block;
+
+    margin-top:6px;
+
+    font-size:12px;
+
+    font-weight:500;
+
+    color:#333;
+
+    white-space:nowrap;
+
+}
+
+.story:hover .story-ring{
+
+    transform:scale(1.05);
+
+}
+
+.story:hover span{
+
+    color:#ff006e;
+
+}
+
+/* =====================================================
+   POST CARD
+===================================================== */
+
+.post-card{
+
+    background:#fff;
+
+    margin-bottom:18px;
+
+    border-bottom:1px solid #ececec;
+
+    animation:fadeUp .45s ease;
+
+}
+
+/* =====================================================
+   POST HEADER
+===================================================== */
+
+.post-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:12px 14px;
+
+}
+
+.user-info{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+}
+
+.user-info img{
+
+    width:42px;
+
+    height:42px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+    border:2px solid #f1f1f1;
+
+}
+
+.user-info h6{
+
+    margin:0;
+
+    font-size:14px;
+
+    font-weight:600;
+
+}
+
+.user-info small{
+
+    display:block;
+
+    margin-top:2px;
+
+    font-size:11px;
+
+    color:#777;
+
+}
+
+.bi-three-dots{
+
+    font-size:20px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.bi-three-dots:hover{
+
+    color:#ff006e;
+
+}
+
+/* =====================================================
+   POST IMAGE
+===================================================== */
+
+.post-image{
+
+    width:100%;
+
+    overflow:hidden;
+
+    background:#f5f5f5;
+
+}
+
+.post-image img{
+
+    width:100%;
+
+    height:420px;
+
+    object-fit:cover;
+
+    transition:.5s;
+
+}
+
+.post-image:hover img{
+
+    transform:scale(1.05);
+
+}
+
+/* =====================================================
+   POST ACTIONS
+===================================================== */
+
+.post-actions{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:12px 14px 8px;
+
+}
+
+.left-actions{
+
+    display:flex;
+
+    gap:18px;
+
+    align-items:center;
+
+}
+
+.left-actions i,
+.right-actions i{
+
+    font-size:28px;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+}
+
+.left-actions i:hover,
+.right-actions i:hover{
+
+    transform:scale(1.15);
+
+}
+
+.bi-heart:hover{
+
+    color:#ed4956;
+
+}
+
+.bi-chat:hover{
+
+    color:#0095f6;
+
+}
+
+.bi-send:hover{
+
+    color:#0095f6;
+
+}
+
+.bi-bookmark:hover{
+
+    color:#ff9800;
+
+}
+
+.bi-heart-fill{
+
+    color:#ed4956;
+
+}
+
+/* =====================================================
+   POST CONTENT
+===================================================== */
+
+.post-content{
+
+    padding:0 14px 15px;
+
+}
+
+.likes{
+
+    font-size:14px;
+
+    font-weight:600;
+
+    margin-bottom:6px;
+
+}
+
+.caption{
+
+    font-size:14px;
+
+    line-height:1.5;
+
+    margin-bottom:6px;
+
+}
+
+.caption strong{
+
+    margin-right:6px;
+
+}
+
+.comments{
+
+    font-size:13px;
+
+    color:#777;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.comments:hover{
+
+    color:#111;
+
+}
+
+.post-time{
+
+    display:block;
+
+    margin-top:5px;
+
+    font-size:11px;
+
+    color:#999;
+
+    text-transform:uppercase;
+
+}
+
+/* =====================================================
+   ANIMATION
+===================================================== */
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(20px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* =====================================================
+   HOME RESPONSIVE
+===================================================== */
+
+@media(max-width:390px){
+
+.mobile-container{
+
+    max-width:100%;
+
+}
+
+.top-navbar{
+
+    padding:0 12px;
+
+}
+
+.nav-logo h3{
+
+    font-size:25px;
+
+}
+
+.story-ring{
+
+    width:66px;
+
+    height:66px;
+
+}
+
+.story-ring img{
+
+    width:58px;
+
+    height:58px;
+
+}
+
+.story span{
+
+    font-size:11px;
+
+}
+
+.post-image img{
+
+    height:360px;
+
+}
+
+.user-info img{
+
+    width:40px;
+
+    height:40px;
+
+}
+
+.left-actions i,
+.right-actions i{
+
+    font-size:26px;
+
+}
+
+.post-content{
+
+    padding:0 12px 14px;
+
+}
+
+.likes,
+.caption{
+
+    font-size:13px;
+
+}
+
+.comments{
+
+    font-size:12px;
+
+}
+
+.post-time{
+
+    font-size:10px;
+
+}
+
+}
+
+@media(min-width:391px){
+
+.mobile-container{
+
+    border-left:1px solid #ddd;
+
+    border-right:1px solid #ddd;
+
+}
+
+}
+/* =====================================================
+   SEARCH PAGE
+===================================================== */
+
+/* ================= SEARCH HEADER ================= */
+
+.search-header{
+
+    position:sticky;
+
+    top:0;
+
+    background:#fff;
+
+    z-index:999;
+
+    padding:12px;
+
+    border-bottom:1px solid #ececec;
+
+}
+
+.search-box{
+
+    width:100%;
+
+    height:42px;
+
+    background:#f2f2f2;
+
+    border-radius:10px;
+
+    display:flex;
+
+    align-items:center;
+
+    padding:0 14px;
+
+}
+
+.search-box i{
+
+    font-size:18px;
+
+    color:#777;
+
+    margin-right:10px;
+
+}
+
+.search-box input{
+
+    width:100%;
+
+    border:none;
+
+    outline:none;
+
+    background:transparent;
+
+    font-size:14px;
+
+    color:#555;
+
+}
+
+.search-box input::placeholder{
+
+    color:#777;
+
+}
+
+/* ================= CATEGORY SECTION ================= */
+
+.category-section{
+
+    display:flex;
+
+    gap:10px;
+
+    overflow-x:auto;
+
+    padding:12px;
+
+    background:#fff;
+
+    border-bottom:1px solid #ececec;
+
+    scrollbar-width:none;
+
+    -ms-overflow-style:none;
+
+}
+
+.category-section::-webkit-scrollbar{
+
+    display:none;
+
+}
+
+.category-btn{
+
+    white-space:nowrap;
+
+    border:1px solid #ddd;
+
+    border-radius:20px;
+
+    padding:7px 16px;
+
+    background:#fff;
+
+    color:#222;
+
+    font-size:13px;
+
+    font-weight:500;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.category-btn:hover{
+
+    background:#f4f4f4;
+
+}
+
+.category-btn.active{
+
+    background:#111;
+
+    color:#fff;
+
+    border-color:#111;
+
+}
+
+/* =====================================================
+   EXPLORE GALLERY
+===================================================== */
+
+.explore-gallery{
+
+    width:100%;
+
+    background:#fff;
+
+    padding-bottom:10px;
+
+}
+
+.explore-gallery .container-fluid{
+
+    padding:0;
+
+}
+
+.explore-gallery .row{
+
+    margin:0;
+
+}
+
+.explore-gallery .row.g-1{
+
+    --bs-gutter-x:2px;
+
+    --bs-gutter-y:2px;
+
+}
+
+.explore-gallery .col-4{
+
+    padding:0;
+
+}
+
+/* ================= EXPLORE ITEM ================= */
+
+.explore-item{
+
+    position:relative;
+
+    width:100%;
+
+    aspect-ratio:1/1;
+
+    overflow:hidden;
+
+    background:#f5f5f5;
+
+    cursor:pointer;
+
+    animation:zoomIn .45s ease;
+
+}
+
+.explore-item img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    transition:transform .45s ease;
+
+}
+
+.explore-item:hover img{
+
+    transform:scale(1.08);
+
+}
+
+/* ================= VIEW BADGE ================= */
+
+.views{
+
+    position:absolute;
+
+    left:8px;
+
+    bottom:8px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:5px;
+
+    padding:4px 8px;
+
+    background:rgba(0,0,0,.55);
+
+    color:#fff;
+
+    border-radius:20px;
+
+    font-size:12px;
+
+    font-weight:600;
+
+    opacity:0;
+
+    transition:.3s;
+
+}
+
+.views i{
+
+    font-size:12px;
+
+}
+
+.explore-item:hover .views{
+
+    opacity:1;
+
+}
+
+/* ================= IMAGE OVERLAY ================= */
+
+.explore-item::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:rgba(0,0,0,.15);
+
+    opacity:0;
+
+    transition:.3s;
+
+}
+
+.explore-item:hover::before{
+
+    opacity:1;
+
+}
+
+/* =====================================================
+   SEARCH PAGE ANIMATION
+===================================================== */
+
+.search-header,
+.category-section,
+.explore-gallery{
+
+    animation:fadeUp .5s ease;
+
+}
+
+@keyframes zoomIn{
+
+    from{
+
+        opacity:0;
+
+        transform:scale(.95);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:scale(1);
+
+    }
+
+}
+
+/* =====================================================
+   SEARCH RESPONSIVE
+===================================================== */
+
+@media(max-width:390px){
+
+.search-header{
+
+    padding:10px;
+
+}
+
+.search-box{
+
+    height:40px;
+
+}
+
+.search-box input{
+
+    font-size:13px;
+
+}
+
+.category-btn{
+
+    font-size:12px;
+
+    padding:6px 14px;
+
+}
+
+.views{
+
+    font-size:11px;
+
+    padding:3px 7px;
+
+}
+
+.views i{
+
+    font-size:11px;
+
+}
+
+.explore-item{
+
+    aspect-ratio:1/1;
+
+}
+
+}
+
+/* =====================================================
+   PROFILE HEADER
+===================================================== */
+
+.profile-header{
+
+    position:sticky;
+
+    top:0;
+
+    background:#fff;
+
+    border-bottom:1px solid #ececec;
+
+    z-index:999;
+
+}
+
+.profile-top{
+
+    height:60px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:0 15px;
+
+}
+
+.username{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:6px;
+
+}
+
+.username h5{
+
+    margin:0;
+
+    font-size:17px;
+
+    font-weight:600;
+
+}
+
+.username i{
+
+    font-size:17px;
+
+}
+
+.header-icons{
+
+    display:flex;
+
+    gap:18px;
+
+}
+
+.header-icons i{
+
+    font-size:25px;
+
+    transition:.3s;
+
+    cursor:pointer;
+
+}
+
+.header-icons i:hover{
+
+    transform:scale(1.1);
+
+}
+
+/* =====================================================
+   PROFILE INFO
+===================================================== */
+
+.profile-info{
+
+    padding:18px 15px;
+
+}
+
+.profile-image{
+
+    width:95px;
+
+    height:95px;
+
+    margin:auto;
+
+}
+
+.profile-image img{
+
+    width:95px;
+
+    height:95px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+    border:3px solid #ddd;
+
+    transition:.4s;
+
+}
+
+.profile-image:hover img{
+
+    transform:scale(1.05);
+
+}
+
+.profile-stats{
+
+    display:flex;
+
+    justify-content:space-around;
+
+    align-items:center;
+
+}
+
+.profile-stats h4{
+
+    margin:0;
+
+    font-size:20px;
+
+    font-weight:700;
+
+}
+
+.profile-stats p{
+
+    margin:0;
+
+    font-size:13px;
+
+    color:#666;
+
+}
+
+.profile-bio{
+
+    margin-top:15px;
+
+}
+
+.profile-bio h6{
+
+    font-size:15px;
+
+    font-weight:600;
+
+}
+
+.profile-bio p{
+
+    margin-top:6px;
+
+    font-size:13px;
+
+    line-height:1.6;
+
+    color:#444;
+
+}
+
+.profile-btn{
+
+    width:100%;
+
+    height:36px;
+
+    border:1px solid #ddd;
+
+    border-radius:8px;
+
+    background:#fafafa;
+
+    font-size:14px;
+
+    font-weight:500;
+
+    transition:.3s;
+
+    cursor:pointer;
+
+}
+
+.profile-btn:hover{
+
+    background:#f1f1f1;
+
+}
+
+.profile-btn:active{
+
+    transform:scale(.97);
+
+}
+
+/* =====================================================
+   STORY HIGHLIGHTS
+===================================================== */
+
+.highlights{
+
+    display:flex;
+
+    gap:18px;
+
+    overflow-x:auto;
+
+    padding:15px;
+
+    background:#fff;
+
+    border-top:1px solid #f2f2f2;
+
+    border-bottom:1px solid #f2f2f2;
+
+    scrollbar-width:none;
+
+    -ms-overflow-style:none;
+
+}
+
+.highlights::-webkit-scrollbar{
+
+    display:none;
+
+}
+
+.highlight{
+
+    flex:0 0 auto;
+
+    text-align:center;
+
+}
+
+.highlight-img{
+
+    width:70px;
+
+    height:70px;
+
+    border-radius:50%;
+
+    padding:3px;
+
+    border:2px solid #ddd;
+
+    transition:.3s;
+
+}
+
+.highlight-img img{
+
+    width:100%;
+
+    height:100%;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+}
+
+.highlight:hover .highlight-img{
+
+    transform:scale(1.08);
+
+    border-color:#ff006e;
+
+}
+
+.highlight span{
+
+    display:block;
+
+    margin-top:8px;
+
+    font-size:12px;
+
+    font-weight:500;
+
+}
+
+/* =====================================================
+   PROFILE TABS
+===================================================== */
+
+.profile-tabs{
+
+    display:flex;
+
+    justify-content:space-around;
+
+    align-items:center;
+
+    background:#fff;
+
+    border-bottom:1px solid #ececec;
+
+}
+
+.tab{
+
+    flex:1;
+
+    height:52px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    border-bottom:2px solid transparent;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.tab i{
+
+    font-size:24px;
+
+    color:#777;
+
+}
+
+.tab.active{
+
+    border-bottom:2px solid #111;
+
+}
+
+.tab.active i{
+
+    color:#111;
+
+}
+
+/* =====================================================
+   PROFILE GALLERY
+===================================================== */
+
+.profile-gallery{
+
+    background:#fff;
+
+}
+
+.profile-gallery .container-fluid{
+
+    padding:0;
+
+}
+
+.profile-gallery .row{
+
+    margin:0;
+
+}
+
+.profile-gallery .row.g-1{
+
+    --bs-gutter-x:2px;
+
+    --bs-gutter-y:2px;
+
+}
+
+.profile-gallery .col-4{
+
+    padding:0;
+
+}
+
+.gallery-item{
+
+    position:relative;
+
+    aspect-ratio:1/1;
+
+    overflow:hidden;
+
+    cursor:pointer;
+
+    background:#f4f4f4;
+
+    animation:zoomIn .45s ease;
+
+}
+
+.gallery-item img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    transition:.4s;
+
+}
+
+.gallery-item:hover img{
+
+    transform:scale(1.08);
+
+}
+
+.gallery-item::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:rgba(0,0,0,.15);
+
+    opacity:0;
+
+    transition:.3s;
+
+}
+
+.gallery-item:hover::before{
+
+    opacity:1;
+
+}
+
+/* =====================================================
+   COMMON FIXED BOTTOM NAVIGATION
+===================================================== */
+
+.bottom-nav{
+
+    position:fixed;
+
+    bottom:0;
+
+    left:0;
+
+    right:0;
+
+    margin:0 auto;
+
+    width:100%;
+
+    max-width:390px;
+
+    height:65px;
+
+    background:#fff;
+
+    border-top:1px solid #ddd;
+
+    display:flex;
+
+    justify-content:space-around;
+
+    align-items:center;
+
+    box-shadow:0 -2px 12px rgba(0,0,0,.08);
+
+    z-index:99999;
+
+}
+
+.bottom-nav a{
+
+    flex:1;
+
+    height:100%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    color:#222;
+
+    transition:.3s;
+
+}
+
+.bottom-nav i{
+
+    font-size:27px;
+
+    transition:.3s;
+
+}
+
+.bottom-nav a:hover{
+
+    color:#111;
+
+}
+
+.bottom-nav a:hover i{
+
+    transform:scale(1.15);
+
+}
+
+.bottom-nav .active{
+
+    color:#000;
+
+    font-weight:700;
+
+}
+
+/* =====================================================
+   COMMON PAGE ANIMATION
+===================================================== */
+
+.profile-header,
+.profile-info,
+.highlights,
+.profile-tabs,
+.profile-gallery{
+
+    animation:fadeUp .5s ease;
+
+}
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media(max-width:390px){
+
+.profile-info{
+
+    padding:15px 12px;
+
+}
+
+.profile-image{
+
+    width:85px;
+
+    height:85px;
+
+}
+
+.profile-image img{
+
+    width:85px;
+
+    height:85px;
+
+}
+
+.profile-stats h4{
+
+    font-size:18px;
+
+}
+
+.profile-stats p{
+
+    font-size:12px;
+
+}
+
+.highlight-img{
+
+    width:64px;
+
+    height:64px;
+
+}
+
+.highlight span{
+
+    font-size:11px;
+
+}
+
+.tab i{
+
+    font-size:22px;
+
+}
+
+.profile-btn{
+
+    height:34px;
+
+    font-size:13px;
+
+}
+
+.username h5{
+
+    font-size:16px;
+
+}
+
+.header-icons i{
+
+    font-size:23px;
+
+}
+
+.bottom-nav{
+
+    height:62px;
+
+    max-width:100%;
+
+}
+
+.bottom-nav i{
+
+    font-size:25px;
+
+}
+
+}
+
+/* =====================================================
+   DESKTOP PREVIEW
+===================================================== */
+
+@media(min-width:391px){
+
+.mobile-container{
+
+    border-left:1px solid #ddd;
+
+    border-right:1px solid #ddd;
+
+}
+
+}
+
+/* =====================================================
+   FINAL POLISH
+===================================================== */
+
+body{
+
+    background:#efefef;
+
+}
+
+.mobile-container{
+
+    overflow-x:hidden;
+
+    overflow-y:visible;
+
+    padding-bottom:85px;
+
+    background:#fff;
+
+    box-shadow:0 5px 25px rgba(0,0,0,.08);
+
+}
